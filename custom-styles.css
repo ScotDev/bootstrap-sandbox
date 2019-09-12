@@ -15,7 +15,7 @@ html {
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: #DEDEDE; /* Set a background color */
+  background-color: #e3f2fd; /* Set a background color */
   color: black; /* Text color */
   font-weight: 700;
   cursor: pointer; /* Add a mouse pointer on hover */
