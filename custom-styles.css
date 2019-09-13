@@ -7,6 +7,11 @@ html {
     text-decoration: none;
   }
 
+  .border-radius-top-custom {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
 #backToTopBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
