@@ -4,13 +4,44 @@ html {
 
 .hyperlink-styled:hover {
     font-weight: bold;
-    text-decoration: none;
+    text-decoration: none!important;
   }
 
-.border-radius-top-custom {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+.email-link-custom:hover {
+    text-decoration: none!important;
   }
+
+/* Creates rounded top of element */
+.border-radius-top-rounded {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  }
+
+/* Creates flat bottom of element */
+.border-radius-bottom-flat {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+/* Creates flat top of element */
+.border-radius-top-flat {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  }
+
+/* Creates rounded bottom of element */
+.border-radius-bottom-rounded {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.custom-blue-bg {
+  background-color: #e3f2fd;
+}
+
+.element-standard-mg-bottom {
+  margin-bottom: 50px;
+}
 
 #backToTopBtn {
   display: none; /* Hidden by default */
