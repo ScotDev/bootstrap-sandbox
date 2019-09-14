@@ -7,9 +7,9 @@ html {
     text-decoration: none;
   }
 
-  .border-radius-top-custom {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+.border-radius-top-custom {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   }
 
 #backToTopBtn {
@@ -30,7 +30,7 @@ html {
   opacity: 0.7;
  }
 
- #jumbotron-image {
+#jumbotron-image {
    background-image: url("https://images.unsplash.com/photo-1451226428352-cf66bf8a0317?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1953&q=80");
    background-repeat: no-repeat;
    /* background-position: center; */
