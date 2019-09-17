@@ -29,11 +29,38 @@
     <div class="container-fluid">
         <footer class="ml-4">
             <i class="fab fa-github"></i><a href="https://github.com/ScotDev" class="text-muted hyperlink-styled" target="_blank"> ScotDev GitHub</a>
-            <p class="mt-2 text-muted">Callum Giles, 2019</p>
+            <p class="mt-2 text-muted">Callum Giles, <span id="year"></span></p>
         </footer>
     </div>
 
 <button onclick="topFunction()" id="backToTopBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
 
+<script>
+    // Scrollspy
+    $('body').scrollspy({target: '#main-nav'});
+    
+    // Bootstrap smooth scrolling
+    $('#main-nav a').on('click', function (e) {
+        // Check for a hash value
+        if (this.hash !== '') {
+          // Prevent default behavior
+          e.preventDefault();
+  
+          // Store hash
+          const hash = this.hash;
+  
+          // Animate smooth scroll
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 900, function () {
+            // Add hash to URL after scroll
+            window.location.hash = hash;
+          });
+        }
+      });
+
+      // Get current year for copyright
+      $('#year').text(new Date().getFullYear());
+</script>
 </body>
 </html>

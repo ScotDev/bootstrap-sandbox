@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .img-resized-custom {
   width: 100%;
   height: auto;
