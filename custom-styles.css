@@ -8,6 +8,25 @@ html {
   opacity: 0.8;
 }
 
+.btn {
+  background-color: #008ed6!important;
+  border: #008ed6 2px solid!important;
+}
+
+/* @media (max-width: 576px) {
+  #jumbotron-title {
+    color: #!important;
+  }
+  
+  #jumbotron-text {
+    color: #!important;
+  }
+ } */
+
+#jumbotron-title {
+  opacity: 1.0!important;
+}
+
 .img-resized-custom {
   width: 100%;
   height: auto;
@@ -74,8 +93,11 @@ html {
  }
 
 #jumbotron-image {
-   background-image: url("https://images.unsplash.com/photo-1448697138198-9aa6d0d84bf4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
-   /* background-image: url("https://images.unsplash.com/photo-1448697138198-9aa6d0d84bf4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"); */
+   /* background-image: url("https://images.unsplash.com/photo-1448697138198-9aa6d0d84bf4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"); Plant on desk */
+   /* background-image: url("https://images.unsplash.com/photo-1470058869958-2a77ade41c02?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80"); Jungle  */
+   /* background-image: url("https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80"); headphones and coffe */
+   background-image: url("https://images.unsplash.com/photo-1499249218963-a128113cd82c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
@@ -95,4 +117,5 @@ html {
   background-position: center;
   background-size: cover;
   height: 100vh;
+  opacity: 0.9;
 }
