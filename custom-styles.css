@@ -31,6 +31,12 @@ html {
   padding-top: 100px;
 }
 
+@media (max-width: 768px) {
+  #home-section .home-inner {
+    padding-top: 40px;
+  }
+}
+
 .btn {
   background-color: #008ed6!important;
   border: #008ed6 1px solid!important;
