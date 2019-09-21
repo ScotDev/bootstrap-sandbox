@@ -138,6 +138,11 @@ html {
   opacity: 0.9;
 }
 
+#btn-cv {
+  margin-left: 5px!important;
+  margin-right: 5px!important;
+}
+
 /* input:valid {
   border: 1px solid rgb(65, 151, 65);
  }
