@@ -137,3 +137,11 @@ html {
   height: 100vh;
   opacity: 0.9;
 }
+
+/* input:valid {
+  border: 1px solid rgb(65, 151, 65);
+ }
+
+input:invalid {
+  border: 1px solid rgb(230, 26, 26);
+ } */
