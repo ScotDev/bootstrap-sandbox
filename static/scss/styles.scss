@@ -1,0 +1,143 @@
+$primary: #008ed6;
+$dark-bg: #333;
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  .navbar {
+    border-bottom: $primary 3px solid;
+    background-color: $dark-bg;
+    opacity: 0.8;
+  }
+  
+  #home-section {
+    background-image: url("https://images.unsplash.com/photo-1448697138198-9aa6d0d84bf4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+    min-height: 500px;
+    margin-bottom: 8vh;
+  }
+  
+  #home-section .dark-overlay {
+    position: absolute;
+    /* top: 0; */
+    left: 0;
+    width: 100%;
+    min-height: 500px;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  
+  #home-section .home-inner {
+    padding-top: 100px;
+  }
+  
+  .img-resized-custom {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+  }
+  
+  .hyperlink-styled:hover {
+      font-weight: bold;
+      text-decoration: none!important;
+    }
+  
+  .email-link-custom:hover {
+      text-decoration: none!important;
+    }
+  
+  /* Creates rounded top of element */
+  .border-radius-top-rounded {
+    border-top-left-radius: 15px!important;
+    border-top-right-radius: 15px!important;
+    }
+  
+  /* Creates rounded bottom of element */
+  .border-radius-bottom-rounded {
+    border-bottom-left-radius: 15px!important;
+    border-bottom-right-radius: 15px!important;
+  }
+  
+  /* Creates flat bottom of element */
+  .border-radius-bottom-flat {
+    border-bottom-left-radius: 0px!important;
+    border-bottom-right-radius: 0px!important;
+  }
+  
+  /* Creates flat top of element */
+  .border-radius-top-flat {
+    border-top-left-radius: 0px!important;
+    border-top-right-radius: 0px!important;
+    }
+  
+  .custom-blue {
+    background-color: #e3f2fd!important;
+  }
+  
+  .element-standard-mg-bottom {
+    margin-bottom: 100px;
+  }
+  
+  #backToTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #e3f2fd; /* Set a background color */
+    color: black; /* Text color */
+    font-weight: 700;
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 14px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    opacity: 0.7;
+   }
+  
+   /* The below block does nothing and will be removed shortly, keeping as reference for now */
+  #header-image {
+     background-image: url("https://images.unsplash.com/photo-1448697138198-9aa6d0d84bf4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+     /* background-image: url("https://images.unsplash.com/photo-1470058869958-2a77ade41c02?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80"); Jungle  */
+     /* background-image: url("https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80"); headphones and coffe */
+     /* background-image: url("https://images.unsplash.com/photo-1499249218963-a128113cd82c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"); */
+     background-repeat: no-repeat;
+     background-position: top;
+     background-size: cover;
+     background-attachment: scroll;
+     min-height: 500px;
+  }
+  
+  #map {
+    filter: grayscale(60%);
+    -webkit-filter: grayscale(60%);
+    height: 100%;
+    width: 100%;
+  }
+  
+  #landing-bg {
+    background-image: url("https://images.unsplash.com/photo-1511649475669-e288648b2339?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80");
+    /* background-image: url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    opacity: 0.9;
+  }
+  
+  #btn-cv {
+    margin-left: 5px!important;
+    margin-right: 5px!important;
+  }
+  /* Media queries */
+  
+  @media (max-width: 768px) {
+    #home-section .home-inner {
+      padding-top: 40px;
+    }
+  }

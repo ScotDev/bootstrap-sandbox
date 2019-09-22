@@ -31,12 +31,6 @@ html {
   padding-top: 100px;
 }
 
-@media (max-width: 768px) {
-  #home-section .home-inner {
-    padding-top: 40px;
-  }
-}
-
 .img-resized-custom {
   width: 100%;
   height: auto;
@@ -136,4 +130,11 @@ html {
 #btn-cv {
   margin-left: 5px!important;
   margin-right: 5px!important;
+}
+/* Media queries */
+
+@media (max-width: 768px) {
+  #home-section .home-inner {
+    padding-top: 40px;
+  }
 }
