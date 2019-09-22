@@ -54,26 +54,26 @@ html {
 
 /* Creates rounded top of element */
 .border-radius-top-rounded {
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  border-top-left-radius: 15px!important;
+  border-top-right-radius: 15px!important;
   }
 
 /* Creates rounded bottom of element */
 .border-radius-bottom-rounded {
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px!important;
+  border-bottom-right-radius: 15px!important;
 }
 
 /* Creates flat bottom of element */
 .border-radius-bottom-flat {
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px!important;
+  border-bottom-right-radius: 0px!important;
 }
 
 /* Creates flat top of element */
 .border-radius-top-flat {
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
+  border-top-left-radius: 0px!important;
+  border-top-right-radius: 0px!important;
   }
 
 .custom-blue {
