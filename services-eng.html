@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <link rel="shortcut icon" type="image/x-icon" href="./favicon-32x32.png">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/x-icon" href="./static/imgs/logo.jpg">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/css/flag-icon.min.css">
-    <link rel="stylesheet" href="./custom-styles.css">
+    <link rel="stylesheet" href="./static/custom-styles.css">
+    <link rel="stylesheet" href="./static/css/bootstrap.css">
     <title>Services</title>
 </head>
 <body data-spy="scroll" data-target="#main-nav" id="home">
@@ -64,7 +65,7 @@
             <div class="container">
             <h1 class="display-2 text-light" id="jumbotron-title">John Doe</h1>
             <h2 class="mb-4 text-light font-weight-normal" id="jumbotron-text">TESTING, EXAMPLE AND OTHER SERVICES</h2>
-            <a href="#contact" class="btn btn-secondary btn-lg">Contact</a>
+            <a href="#contact" class="btn btn-primary btn-lg">Contact</a>
         </div>
     </div> -->
 
@@ -73,7 +74,7 @@
             <div class="home-inner container text-center">
                 <h1 class="display-2 mb-3 text-light" id="jumbotron-title">Marcela Torres</h1>
                     <h2 class="mb-5 text-light font-weight-normal" id="jumbotron-text">Translation, interpreting and subtitling services</h2>
-                <a href="#contact" class="btn btn-secondary btn-lg">Contact</a>
+                <a href="#contact" class="btn btn-primary btn-lg">Contact</a>
             </div>
         </div>
     </header>
@@ -218,15 +219,15 @@
     <div class="container text-center element-standard-mg-bottom" id="contact">
         <h3 class="mb-4">Need more information?</h3>
         <p class="lead">Download my CV or visit my social media profiles</p>
-        <a href="https://www.linkedin.com/" class="btn btn-secondary" target="_blank">LinkedIn</a>
-        <a href="./static/downloadable/Example-PDF.pdf" class="btn btn-secondary" target="_blank"  id="btn-cv">Download CV</a>
-        <a href="https://www.proz.com/" class="btn btn-secondary" target="_blank">ProZ</a>
+        <a href="https://www.linkedin.com/" class="btn btn-primary" target="_blank">LinkedIn</a>
+        <a href="./static/downloadable/Example-PDF.pdf" class="btn btn-primary" target="_blank"  id="btn-cv">Download CV</a>
+        <a href="https://www.proz.com/" class="btn btn-primary" target="_blank">ProZ</a>
     </div>
 
     <div class="container">
             <div class="p-3 card card-body text-center mb-2 border-radius-top-rounded border-radius-bottom-flat bg-light" id="contact-details">
                 <h3 class="mb-4">Contact</h3>
-                <h4 class="lead mb-3"><i class="fas fa-phone"></i><span class="text-muted"> +44(0)777777777</span></h4>
+                <h4 class="lead mb-3"><i class="fas fa-phone"></i><a href="tel:+44(0)777777777" class="text-muted"> +44(0)777777777</a></h4>
                 <h4 class="lead mb-3"><i class="fas fa-envelope"></i><a href="mailto:EXAMPLE.TEST@EXAMPLE.COM" class="text-muted"> EXAMPLE.TEST@EXAMPLE.COM</a></h4>
                 <h4 class="lead text-muted mb-4">Or fill out the form below:</h4>
             </div>
@@ -251,7 +252,7 @@
                 <label for="message">Message</label>
                 <textarea class="form-control" style="overflow: hidden" rows="5" id="message" name="message" required></textarea>
             </div>
-            <button class="btn btn-secondary" type="submit">Submit</button>
+            <button class="btn btn-primary" type="submit">Submit</button>
             </form>
         </div>
     </div>
@@ -274,7 +275,7 @@
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="./custom-scripts.js"></script>
+<script src="./JS/custom-scripts.js"></script>
 <script>
     // Scrollspy
     $('body').scrollspy({target: '#main-nav'});

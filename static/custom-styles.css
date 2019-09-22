@@ -37,11 +37,6 @@ html {
   }
 }
 
-.btn {
-  background-color: #008ed6!important;
-  border: #008ed6 1px solid!important;
-}
-
 .img-resized-custom {
   width: 100%;
   height: auto;
@@ -142,11 +137,3 @@ html {
   margin-left: 5px!important;
   margin-right: 5px!important;
 }
-
-/* input:valid {
-  border: 1px solid rgb(65, 151, 65);
- }
-
-input:invalid {
-  border: 1px solid rgb(230, 26, 26);
- } */
