@@ -56,10 +56,7 @@ html {
   border-top-left-radius: 0px !important;
   border-top-right-radius: 0px !important; }
 
-.custom-blue {
-  background-color: #e3f2fd !important; }
-
-.element-standard-mg-bottom {
+.mb-custom {
   margin-bottom: 100px; }
 
 #backToTopBtn {

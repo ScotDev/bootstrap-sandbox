@@ -1,5 +1,7 @@
+// Customm variables for use directly in this file. The primary blue was also changed in the bootstrap SCSS file
 $primary: #008ed6;
 $dark-bg: #333;
+$light-blue: #e3f2fd;
 
 html {
     scroll-behavior: smooth;
@@ -73,11 +75,7 @@ html {
     border-top-right-radius: 0px!important;
     }
   
-  .custom-blue {
-    background-color: #e3f2fd!important;
-  }
-  
-  .element-standard-mg-bottom {
+  .mb-custom {
     margin-bottom: 100px;
   }
   
@@ -89,7 +87,7 @@ html {
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: #e3f2fd; /* Set a background color */
+    background-color: $light-blue; /* Set a background color */
     color: black; /* Text color */
     font-weight: 700;
     cursor: pointer; /* Add a mouse pointer on hover */
