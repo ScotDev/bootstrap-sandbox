@@ -23,6 +23,39 @@ html {
     background: rgba(0, 0, 0, 0.3); }
   #home-section .home-inner {
     padding-top: 100px; }
+  #home-section a:hover {
+    border: 1px #e3f2fd solid;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #e3f2fd; }
+
+#landing-bg {
+  background-image: url("/static/imgs/landing-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  opacity: 0.9; }
+
+#landing-area {
+  position: relative;
+  top: 30vh; }
+  #landing-area #landing-subtitle {
+    margin-bottom: 50px; }
+  #landing-area a:hover {
+    border: 1px #008ed6 solid;
+    background-color: transparent;
+    color: #008ed6; }
+
+#contact a:hover {
+  border: 1px #008ed6 solid;
+  background-color: transparent;
+  color: #008ed6; }
+
+button[type=submit]:hover {
+  border: 1px #008ed6 solid;
+  background-color: transparent;
+  color: #008ed6; }
 
 .img-resized-custom {
   width: 100%;
@@ -94,15 +127,6 @@ html {
   -webkit-filter: grayscale(60%);
   height: 100%;
   width: 100%; }
-
-#landing-bg {
-  background-image: url("../imgs/landing-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 100vh;
-  opacity: 0.9; }
 
 #btn-cv {
   margin-left: 5px !important;

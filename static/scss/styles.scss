@@ -2,10 +2,17 @@
 $primary: #008ed6; // Same as modified primary colour in bootstrap SCSS file
 $dark-bg: #333;
 $light-blue: #e3f2fd;
+$dark-overlay: rgba(0, 0, 0, 0.3);
 
 html {
     scroll-behavior: smooth;
   }
+
+  // .btn-custom:hover {
+  //   border: 1px $primary solid;
+  //   background-color: #fff;
+  //   color: $primary;
+  // }
   
   .navbar {
     border-bottom: $primary 3px solid;
@@ -28,14 +35,59 @@ html {
         left: 0;
         width: 100%;
         min-height: 500px;
-        background: rgba(0, 0, 0, 0.3);
+        background: $dark-overlay;
     }
 
     .home-inner {
         padding-top: 100px;
       }
+      a:hover {
+        border: 1px $light-blue solid;
+        background-color: $dark-overlay;
+        color: $light-blue;
+      }
+
   }
   
+  #landing-bg {
+    background-image: url("/static/imgs/landing-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    opacity: 0.9;
+  }
+
+  #landing-area {
+    position: relative;
+    top: 30vh;
+
+    #landing-subtitle {
+      margin-bottom: 50px;
+    }
+
+    a:hover {
+      border: 1px $primary solid;
+      background-color: transparent;
+      color: $primary;
+    }
+  }
+
+  #contact{
+    a:hover {
+      border: 1px $primary solid;
+      background-color: transparent;
+      color: $primary;
+    }
+  }
+
+  button[type=submit]:hover {
+    border: 1px $primary solid;
+    background-color: transparent;
+    color: $primary;
+  }
+
   .img-resized-custom {
     width: 100%;
     height: auto;
@@ -102,16 +154,6 @@ html {
     -webkit-filter: grayscale(60%);
     height: 100%;
     width: 100%;
-  }
-  
-  #landing-bg {
-    background-image: url("../imgs/landing-bg.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 100vh;
-    opacity: 0.9;
   }
   
   #btn-cv {
