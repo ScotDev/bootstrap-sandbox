@@ -52,20 +52,47 @@ html {
     height: 100vh;
     opacity: 0.9;
     overflow: hidden;
+
+    #landing-area {
+      position: relative;
+      top: 25vh;
+
+      #landing-subtitle {
+        margin-bottom: 50px;
+      }
+
+      a:hover {
+        border: 1px $primary solid;
+        background-color: transparent;
+        color: $primary;
+      }
+    }
   }
 
-  #landing-area {
-    position: relative;
-    top: 25vh;
+  #landing-bg-404 {
+    background-image: url("/static/imgs/404.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    opacity: 0.9;
+    overflow: hidden;
+    color: $light-blue;
 
-    #landing-subtitle {
-      margin-bottom: 50px;
-    }
+    #landing-area-404 {
+      position: relative;
+      top: 25vh;
 
-    a:hover {
-      border: 1px $primary solid;
-      background-color: transparent;
-      color: $primary;
+      #landing-subtitle-404 {
+        margin-bottom: 50px;
+      }
+
+      a:hover {
+        border: 1px $light-blue solid;
+        background-color: transparent;
+        color: $light-blue;
+      }
     }
   }
 

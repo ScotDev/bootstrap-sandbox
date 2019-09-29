@@ -37,16 +37,35 @@ html {
   height: 100vh;
   opacity: 0.9;
   overflow: hidden; }
+  #landing-bg #landing-area {
+    position: relative;
+    top: 25vh; }
+    #landing-bg #landing-area #landing-subtitle {
+      margin-bottom: 50px; }
+    #landing-bg #landing-area a:hover {
+      border: 1px #008ed6 solid;
+      background-color: transparent;
+      color: #008ed6; }
 
-#landing-area {
-  position: relative;
-  top: 25vh; }
-  #landing-area #landing-subtitle {
-    margin-bottom: 50px; }
-  #landing-area a:hover {
-    border: 1px #008ed6 solid;
-    background-color: transparent;
-    color: #008ed6; }
+#landing-bg-404 {
+  background-image: url("/static/imgs/404.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  opacity: 0.9;
+  overflow: hidden;
+  color: #e3f2fd; }
+  #landing-bg-404 #landing-area-404 {
+    position: relative;
+    top: 25vh; }
+    #landing-bg-404 #landing-area-404 #landing-subtitle-404 {
+      margin-bottom: 50px; }
+    #landing-bg-404 #landing-area-404 a:hover {
+      border: 1px #e3f2fd solid;
+      background-color: transparent;
+      color: #e3f2fd; }
 
 #contact a:hover {
   border: 1px #008ed6 solid;
