@@ -3,6 +3,7 @@ $primary: #008ed6; // Same as modified primary colour in bootstrap SCSS file
 $dark-bg: #333;
 $light-blue: #e3f2fd;
 $dark-overlay: rgba(0, 0, 0, 0.3);
+$light-grey: rgba(184, 184, 184, 0.2);
 
 html {
     scroll-behavior: smooth;
@@ -21,7 +22,7 @@ html {
     background-attachment: fixed;
     background-position: bottom;
     min-height: 500px;
-    margin-bottom: 8vh;
+    margin-bottom: 4vh;
 
     .dark-overlay {
         position: absolute;
@@ -104,6 +105,21 @@ html {
     }
   }
 
+  .theme-grey-block-bg {
+    background-color: $light-grey;
+  }
+
+  .theme-element-outline {
+    border: $light-grey 1px solid;
+  }
+  
+  // For consistent spacing around block elements
+  .block-element-sizing {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+  }
+
   button[type=submit]:hover {
     border: 1px $primary solid;
     background-color: transparent;
@@ -149,9 +165,6 @@ html {
     border-top-right-radius: 0px!important;
     }
   
-  .mb-custom {
-    margin-bottom: 100px;
-  }
   
   #backToTopBtn {
     display: none; /* Hidden by default */
@@ -182,8 +195,8 @@ html {
     margin-left: 5px!important;
     margin-right: 5px!important;
   }
-  /* Media queries */
-  
+
+  /* Media queries */  
   @media (max-width: 768px) {
     #home-section .home-inner {
       padding-top: 40px;

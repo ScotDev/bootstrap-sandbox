@@ -13,7 +13,7 @@ html {
   background-attachment: fixed;
   background-position: bottom;
   min-height: 500px;
-  margin-bottom: 8vh; }
+  margin-bottom: 4vh; }
   #home-section .dark-overlay {
     position: absolute;
     /* top: 0; */
@@ -72,6 +72,17 @@ html {
   background-color: transparent;
   color: #008ed6; }
 
+.theme-grey-block-bg {
+  background-color: rgba(184, 184, 184, 0.2); }
+
+.theme-element-outline {
+  border: rgba(184, 184, 184, 0.2) 1px solid; }
+
+.block-element-sizing {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  margin-bottom: 50px; }
+
 button[type=submit]:hover {
   border: 1px #008ed6 solid;
   background-color: transparent;
@@ -108,9 +119,6 @@ button[type=submit]:hover {
 .border-radius-top-flat {
   border-top-left-radius: 0px !important;
   border-top-right-radius: 0px !important; }
-
-.mb-custom {
-  margin-bottom: 100px; }
 
 #backToTopBtn {
   display: none;
