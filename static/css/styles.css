@@ -154,7 +154,8 @@ button[type=submit]:hover {
   filter: grayscale(60%);
   -webkit-filter: grayscale(60%);
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  opacity: 0.9; }
 
 #btn-cv {
   margin-left: 5px !important;
