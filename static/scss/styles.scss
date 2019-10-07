@@ -10,7 +10,7 @@ html {
   }
 
   body {
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'DM Sans', sans-serif!important;
   }
 
   .navbar {
@@ -168,7 +168,6 @@ html {
     border-top-left-radius: 0px!important;
     border-top-right-radius: 0px!important;
     }
-  
   
   #backToTopBtn {
     display: none; /* Hidden by default */

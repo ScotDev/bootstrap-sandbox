@@ -8,8 +8,9 @@
     <link rel="shortcut icon" type="image/x-icon" href="./static/imgs/logo.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/css/flag-icon.min.css">
     <link href="https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap&subset=latin-ext" rel="stylesheet">
-    <link rel="stylesheet" href="./static/css/bootstrap.css">
-    <link rel="stylesheet" href="./static/css/styles.css">
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <link rel="stylesheet" href="../static/css/success.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <title>MT Translations | Services</title>
 </head>
@@ -17,9 +18,9 @@
 
     <!-- Navbar -->
     
-    <nav class="navbar navbar-expand-md sticky-top navbar-dark bg-dark mb-0" id="main-nav">
+    <nav class="navbar navbar-expand-md sticky-top navbar-dark bg-dark" id="main-nav">
             <div class="container-fluid">
-                <a href="./index.html" class="navbar-brand">MT</a>
+                <a href="../index.html" class="navbar-brand">MT</a>
                 <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
                         <span class="navbar-toggler-icon"></span>
                 </button>
@@ -55,3 +56,54 @@
                 </div>
             </div>
         </nav>
+
+        <div class="container">
+            <div class="p-3 card card-body text-center border-radius-top-rounded border-radius-bottom-rounded theme-element-outline" id="success-card">
+                <h2 class="mb-4">Thank you for contacting me!</h2>
+                <h3 class="lead mb-4">I'll be in touch </h3>
+                <h4 class="lead mb-3"><i class="fas fa-phone"></i><a href="tel:+44(0)777777777" class="text-muted"> +44(0)777777777</a></h4>
+                <h4 class="lead mb-3"><i class="fas fa-envelope"></i><a href="mailto:EXAMPLE.TEST@EXAMPLE.COM" class="text-muted"> EXAMPLE.TEST@EXAMPLE.COM</a></h4>
+            </div>
+        </div>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="../JS/custom-scripts.js"></script>
+<script>
+    // Scrollspy
+    $('body').scrollspy({target: '#main-nav'});
+    
+    // Bootstrap smooth scrolling
+    $('#main-nav a').on('click', function (e) {
+        // Check for a hash value
+        if (this.hash !== '') {
+            // Prevent default behavior
+            e.preventDefault();
+    
+            // Store hash
+            const hash = this.hash;
+    
+            // Animate smooth scroll
+            $('html, body').animate({
+            scrollTop: $(hash).offset().top
+            }, 900, function () {
+            // Add hash to URL after scroll
+            window.location.hash = hash;
+            });
+        }
+        });
+
+        // Get current year for copyright
+        $('#year').text(new Date().getFullYear());
+</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        offset: 50,
+        duration: 1000
+    });
+</script>
+</body>
+</html>

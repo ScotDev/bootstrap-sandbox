@@ -2,7 +2,7 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  font-family: 'DM Sans', sans-serif; }
+  font-family: "DM Sans", sans-serif !important; }
 
 .navbar {
   border-bottom: #008ed6 3px solid;
