@@ -1,6 +1,9 @@
 html {
   scroll-behavior: smooth; }
 
+body {
+  font-family: 'DM Sans', sans-serif; }
+
 .navbar {
   border-bottom: #008ed6 3px solid;
   background-color: #333;

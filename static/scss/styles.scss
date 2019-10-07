@@ -9,6 +9,10 @@ html {
     scroll-behavior: smooth;
   }
 
+  body {
+    font-family: 'DM Sans', sans-serif;
+  }
+
   .navbar {
     border-bottom: $primary 3px solid;
     background-color: $dark-bg;

@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="shortcut icon" type="image/x-icon" href="./static/imgs/logo.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/css/flag-icon.min.css">
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap&subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="./static/css/bootstrap.css">
     <link rel="stylesheet" href="./static/css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <title>MT Translations | Servicios</title>
 </head>
 <body data-spy="scroll" data-target="#main-nav" id="home">
@@ -70,7 +72,7 @@
     <!-- Services -->
 
     <div class="container text-center block-element-sizing">
-            <h2 class="mb-4" id="services">Services</h2>
+            <h2 class="mb-4" id="services">Servicios</h2>
                 <div class="row">
                     <div class="col-lg">
                         <img class="img-resized-custom" src="./static/imgs/translation.png" alt="">
@@ -101,7 +103,7 @@
     
         <!-- Clients -->
 
-    <div class="container block-element-sizing">
+        <div class="container block-element-sizing" data-aos="fade-left">
             <h2 class="text-center mb-4">Satisfied Clients</h2>
             <div class="row align-items-center">
                 <div class="col">
@@ -137,10 +139,30 @@
                 <img class="img-resized-custom mb-4" src="./static/imgs/client-img-10.png" alt="">
                 </div>
             </div>
+            <div class="row align-items-center">
+                <div class="col">
+                <img class="img-resized-custom mb-4" src="./static/imgs/client-img-11.png" alt="">
+                </div>
+                <div class="col">
+                <img class="img-resized-custom mb-4" src="./static/imgs/client-img-12.png" alt="">
+                </div>
+                <div class="col">
+                <img class="img-resized-custom mb-4" src="./static/imgs/client-img-13.png" alt="">
+                </div>
+                <div class="col">
+                <img class="img-resized-custom mb-4" src="./static/imgs/client-img-14.png" alt="">
+                </div>
+                <div class="col">
+                <img class="img-resized-custom mb-4" src="./static/imgs/client-img-15.png" alt="">
+                </div>
+                <div class="col">
+                <img class="img-resized-custom mb-4" src="./static/imgs/client-img-16.png" alt="">
+                </div>
+            </div>
         </div>
 
         <!-- Testimonials -->
-    <div class="container-fluid theme-grey-block-bg block-element-sizing">
+    <div class="container-fluid theme-grey-block-bg block-element-sizing" data-aos="fade-right">
         <div class="container text-center">
             <h3 class="mb-4">Client Testimonials</h3>
             <div class="row">
@@ -174,7 +196,7 @@
 
     <!-- Interpreting -->
 
-    <div class="container text-center mb-4">
+    <div class="container text-center mb-4" data-aos="fade-left">
         <h3 class="mb-4">Interpreting</h3>
         <blockquote class="blockquote">
                 <p class="">Below is a sample of my interpreting work at the Testimony Tour event “From Africa to Europe”. I interpreted in both consecutive and chuchotage styles for the Ugandan leaders Jane Frances Kuka (Resident District Commissioner of Kapchorwa and former Minister for Gender and Culture), Gimbo Harriet Robinah (Director of Programmes at ActionAid), and Chebet Juliet Carolyn (community worker).</p>
@@ -183,7 +205,7 @@
 
     <!-- Gallery -->
 
-    <div class="container block-element-sizing">
+    <div class="container block-element-sizing" data-aos="fade-up">
         <div class="row justify-content-md-center mb-4">
             <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-3">
                 <object class="border-radius-top-rounded border-radius-bottom-rounded" style="width: 100%; height: 100%;" data="https://www.youtube.com/embed/J1_EhHZ6ahE"></object>
@@ -207,7 +229,7 @@
     </div>
 
     <!-- About -->
-    <div class="container-fluid theme-grey-block-bg block-element-sizing">
+    <div class="container-fluid theme-grey-block-bg block-element-sizing" data-aos="fade-right">
         <div class="container text-center">
             <h3 class="mb-4">About me</h3>
             <blockquote class="blockquote">
@@ -218,7 +240,7 @@
 
     <!-- More information -->
 
-    <div class="container text-center block-element-sizing" id="contact">
+    <div class="container text-center block-element-sizing" id="contact" data-aos="fade-left">
         <h3 class="mb-4">Need more information?</h3>
         <p class="lead">Download my CV or visit my social media profiles</p>
         <a href="https://www.linkedin.com/" class="btn btn-primary btn-lg" target="_blank">LinkedIn</a>
@@ -228,7 +250,7 @@
 
     <!-- Contact -->
 
-    <div class="container">
+    <div class="container" data-aos="fade-down">
             <div class="p-3 card card-body text-center mb-2 border-radius-top-rounded border-radius-bottom-flat theme-grey-block-bg block-element-sizing theme-element-outline" id="contact-details">
                 <h3 class="mb-4">Contact</h3>
                 <h4 class="lead mb-3"><i class="fas fa-phone"></i><a href="tel:+44(0)777777777" class="text-muted"> +44(0)777777777</a></h4>
@@ -237,7 +259,7 @@
             </div>
         </div>
     
-    <div class="container">
+    <div class="container" data-aos="fade-up">
         <div class="p-3 card card-body border-radius-top-flat border-radius-bottom-rounded theme-grey-block-bg block-element-sizing mb-4 theme-element-outline">
             <form name="contact-en" method="POST" data-netlify="true">
             <div class="form-group">
@@ -264,7 +286,9 @@
     <!-- Google map -->
 
     <div class="container block-element-sizing">
+        <!-- <div style="opacity: 0.9"> -->
         <embed id="map" class="border-radius-top-rounded border-radius-bottom-rounded" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJIyaYpQC4h0gRJxfnfHsU8mQ&key=AIzaSyD0K3NdknKsfZw05J_NNQThWeEh5JANTfo" allowfullscreen=>
+        <!-- </div> -->
     </div>
 
     <!-- Self reference -->
@@ -310,6 +334,13 @@
 
       // Get current year for copyright
       $('#year').text(new Date().getFullYear());
+</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+      offset: 50,
+      duration: 1000
+  });
 </script>
 </body>
 </html>
