@@ -1,3 +1,6 @@
+// Custom variable colours for use directly in this file.
+$primary: #008ed6; // Same as modified primary colour in bootstrap SCSS file
+
 body {
     background-image: url("/static/imgs/success-bg.jpg");
     background-repeat: no-repeat;
@@ -9,6 +12,18 @@ body {
     overflow: hidden;
   }
 
-// #success-bg {
-//     width: 75%;
-// }
+
+#success-card {
+  margin-top: 15vh!important;
+
+  #btn-return {
+    width: 6.5rem!important;
+    align-self: center;
+  }
+
+  #btn-return:hover {
+    border: 1px $primary solid;
+    background-color: transparent;
+    color: $primary;
+  }
+}

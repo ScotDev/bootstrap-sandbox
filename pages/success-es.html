@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/x-icon" href="./static/imgs/logo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/css/flag-icon.min.css">
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <link rel="stylesheet" href="../static/css/success.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <title>MT Traducciones | Gracias</title>
+</head>
+<body data-spy="scroll" data-target="#main-nav" id="home">
+
+    <!-- Navbar -->
+    
+    <nav class="navbar navbar-expand-md sticky-top navbar-dark bg-dark" id="main-nav">
+            <div class="container-fluid">
+                <a href="../index.html" class="navbar-brand">MT</a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="services-eng.html" class="nav-link">Inicio</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mr-2"><a href="https://twitter.com/" class="nav-link" target="_blank">
+                            <i class="fab fa-twitter fa-lg"></i></a>
+                        </li>
+                        <li class="nav-item mr-2"><a href="https://www.linkedin.com/" class="nav-link" target="_blank">
+                            <i class="fab fa-linkedin-in fa-lg"></i></a>
+                        </li>
+                        <li class="nav-item mr-3"><a href="mailto:example@example.com" class="nav-link">
+                            <i class="fas fa-envelope fa-lg"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./services-eng.html" class="nav-link">Inglés <span class="flag-icon flag-icon-gb flag-icon-squared"></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./services-es.html" class="nav-link">Español <span class="flag-icon flag-icon-es flag-icon-squared"></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid text-center">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-4 align-self-center">
+                    <div class="p-4 card card-body border-radius-top-rounded border-radius-bottom-rounded theme-element-outline" id="success-card">
+                        <h2 class="mb-4">Gracias!</h2>
+                        <h3 class="lead mb-5">Le contesto pronto</h3>
+                        <h4 class="lead mb-4"><i class="fas fa-phone"></i><a href="tel:+44(0)777777777" class="text-muted"> +44(0)777777777</a></h4>
+                        <h4 class="lead mb-5"><i class="fas fa-envelope"></i><a href="mailto:EXAMPLE.TEST@EXAMPLE.COM" class="text-muted"> EXAMPLE.TEST@EXAMPLE.COM</a></h4>
+                        <a href="./services-eng.html" class="btn btn-primary btn-lg" id="btn-return">Inicio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="../JS/custom-scripts.js"></script>
+<script>
+    // Scrollspy
+    $('body').scrollspy({target: '#main-nav'});
+    
+    // Bootstrap smooth scrolling
+    $('#main-nav a').on('click', function (e) {
+        // Check for a hash value
+        if (this.hash !== '') {
+            // Prevent default behavior
+            e.preventDefault();
+    
+            // Store hash
+            const hash = this.hash;
+    
+            // Animate smooth scroll
+            $('html, body').animate({
+            scrollTop: $(hash).offset().top
+            }, 900, function () {
+            // Add hash to URL after scroll
+            window.location.hash = hash;
+            });
+        }
+        });
+
+        // Get current year for copyright
+        $('#year').text(new Date().getFullYear());
+</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        offset: 50,
+        duration: 1000
+    });
+</script>
+</body>
+</html>
