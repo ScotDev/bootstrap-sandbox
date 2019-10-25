@@ -101,13 +101,21 @@ html {
     }
   }
 
-  #contact{
+  #more-info {
     a:hover {
       border: 1px $primary solid;
       background-color: transparent;
       color: $primary;
     }
   }
+
+  // #contact{
+  //   a:hover {
+  //     border: 1px $primary solid;
+  //     background-color: transparent;
+  //     color: $primary;
+  //   }
+  // }
 
   .theme-grey-block-bg {
     background-color: $light-grey;
