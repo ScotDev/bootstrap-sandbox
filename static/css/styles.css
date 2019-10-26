@@ -178,3 +178,6 @@ button[type=submit]:hover {
 label::after {
   content: "*";
   color: #008ed6; }
+
+.hidden {
+  display: none; }

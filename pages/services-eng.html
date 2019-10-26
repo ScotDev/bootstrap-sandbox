@@ -13,7 +13,6 @@
     <link href="https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap&subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="../static/css/bootstrap.css">
     <link rel="stylesheet" href="../static/css/styles.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <title>MT Translations | Services</title>
 </head>
 <body data-spy="scroll" data-target="#main-nav" id="home">
@@ -106,7 +105,7 @@
     
         <!-- Clients -->
 
-        <div class="container block-element-sizing" data-aos="fade-left">
+        <div class="container block-element-sizing">
             <h2 class="text-center mb-4">Satisfied Clients</h2>
             <div class="row align-items-center">
                 <div class="col">
@@ -199,7 +198,7 @@
 
     <!-- Interpreting -->
 
-    <div class="container text-center mb-4" data-aos="fade-left">
+    <div class="container text-center mb-4">
         <h3 class="mb-4">Interpreting</h3>
         <blockquote class="blockquote">
                 <p class="">Below is a sample of my interpreting work at the Testimony Tour event “From Africa to Europe”. I interpreted in both consecutive and chuchotage styles for the Ugandan leaders Jane Frances Kuka (Resident District Commissioner of Kapchorwa and former Minister for Gender and Culture), Gimbo Harriet Robinah (Director of Programmes at ActionAid), and Chebet Juliet Carolyn (community worker).</p>
@@ -208,7 +207,7 @@
 
     <!-- Gallery -->
 
-    <div class="container block-element-sizing" data-aos="fade-up">
+    <div class="container block-element-sizing">
         <div class="row justify-content-md-center mb-4">
             <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-3">
                 <object class="border-radius-top-rounded border-radius-bottom-rounded" style="width: 100%; height: 100%;" data="https://www.youtube.com/embed/J1_EhHZ6ahE"></object>
@@ -232,7 +231,7 @@
     </div>
 
     <!-- About -->
-    <div class="container-fluid theme-grey-block-bg block-element-sizing" data-aos="fade-right">
+    <div class="container-fluid theme-grey-block-bg block-element-sizing">
         <div class="container text-center">
             <h3 class="mb-4">About me</h3>
             <blockquote class="blockquote">
@@ -264,7 +263,10 @@
     
     <div class="container">
         <div class="p-3 card card-body border-radius-top-flat border-radius-bottom-rounded theme-grey-block-bg block-element-sizing mb-4 theme-element-outline">
-            <form name="contact-en" method="POST" action="../success-eng.html" data-netlify="true">
+            <form name="contact-en" method="POST" action="../success-eng.html" data-netlify="true" netlify-honeypot="bot-field">
+            <div class="hidden">
+                <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+            </div>
             <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" class="form-control" id="name" name="name" required>
@@ -334,13 +336,6 @@
 
       // Get current year for copyright
       $('#year').text(new Date().getFullYear());
-</script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init({
-      offset: 50,
-      duration: 1000
-  });
 </script>
 </body>
 </html>
