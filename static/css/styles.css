@@ -4,6 +4,9 @@ html {
 body {
   font-family: "DM Sans", sans-serif !important; }
 
+nav img {
+  max-height: 40px; }
+
 .navbar {
   border-bottom: #008ed6 3px solid;
   background-color: #333;
