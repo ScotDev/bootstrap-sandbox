@@ -92,7 +92,7 @@ button[type=submit]:hover {
   color: #008ed6; }
 
 .img-resized-custom {
-  width: 100%;
+  width: 80%;
   height: auto;
   vertical-align: middle; }
 
@@ -172,9 +172,8 @@ button[type=submit]:hover {
   #home-section .home-inner {
     padding-top: 40px; }
 
-  #backToTopBtn {
-    right: 25px;
-    /* Place the button 25px from the right */ } }
+  .img-resized-custom {
+    width: 100%; } }
 label::after {
   content: "*";
   color: #008ed6; }
