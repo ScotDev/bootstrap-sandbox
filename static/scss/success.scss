@@ -8,22 +8,20 @@ body {
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
-    opacity: 0.9;
     overflow: hidden;
   }
 
-
-#success-card {
-  margin-top: 15vh!important;
-
-  #btn-return {
-    width: 6.5rem!important;
-    align-self: center;
+  #success-card {
+    margin-top: 15vh!important;
+  
+    #btn-return {
+      width: 6.5rem!important;
+      align-self: center;
+    }
+  
+    #btn-return:hover {
+      border: 1px $primary solid;
+      background-color: transparent;
+      color: $primary;
+    }
   }
-
-  #btn-return:hover {
-    border: 1px $primary solid;
-    background-color: transparent;
-    color: $primary;
-  }
-}

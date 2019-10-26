@@ -153,6 +153,9 @@ button[type=submit]:hover {
   /* Increase font size */
   opacity: 0.7; }
 
+#map-container {
+  margin-bottom: 0px; }
+
 #map {
   filter: grayscale(60%);
   -webkit-filter: grayscale(60%);
@@ -169,4 +172,5 @@ button[type=submit]:hover {
   #home-section .home-inner {
     padding-top: 40px; } }
 label::after {
-  content: "*"; }
+  content: "*";
+  color: #008ed6; }

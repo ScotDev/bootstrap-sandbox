@@ -109,14 +109,6 @@ html {
     }
   }
 
-  // #contact{
-  //   a:hover {
-  //     border: 1px $primary solid;
-  //     background-color: transparent;
-  //     color: $primary;
-  //   }
-  // }
-
   .theme-grey-block-bg {
     background-color: $light-grey;
   }
@@ -194,6 +186,10 @@ html {
     font-size: 18px; /* Increase font size */
     opacity: 0.7;
    }
+
+  #map-container {
+    margin-bottom: 0px;
+  }
   
   #map {
     filter: grayscale(60%);
@@ -217,4 +213,5 @@ html {
 
   label::after {
     content: "*";
+    color: $primary;
   }
