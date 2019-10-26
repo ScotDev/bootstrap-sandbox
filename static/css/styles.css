@@ -151,7 +151,7 @@ button[type=submit]:hover {
   /* Rounded corners */
   font-size: 18px;
   /* Increase font size */
-  opacity: 0.7; }
+  opacity: 0.8; }
 
 #map-container {
   margin-bottom: 0px; }
@@ -170,7 +170,11 @@ button[type=submit]:hover {
 /* Media queries */
 @media (max-width: 768px) {
   #home-section .home-inner {
-    padding-top: 40px; } }
+    padding-top: 40px; }
+
+  #backToTopBtn {
+    right: 25px;
+    /* Place the button 25px from the right */ } }
 label::after {
   content: "*";
   color: #008ed6; }
