@@ -216,6 +216,9 @@ html {
     .img-resized-custom {
       width: 100%;
     }
+    object {
+      min-width: 100%;
+    }
   }
 
   label::after {
@@ -225,4 +228,9 @@ html {
 
   .hidden {
     display: none;
+  }
+
+  object {
+    width: 80%;
+    height: 100%;
   }
