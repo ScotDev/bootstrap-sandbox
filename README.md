@@ -1,3 +1,3 @@
-## A rework of a someone's personal website, expected to be finished and pushed to a custom domain soon
+## A rework of a MT Traducciones (MT Translations) business website
 
-### See the development live at https://silly-bohr-d26ac0.netlify.com/
+### Now live at https://www.mttraducciones.com/
