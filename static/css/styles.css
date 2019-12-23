@@ -96,6 +96,7 @@ button[type=submit]:hover {
 
 .img-resized-custom {
   width: 80%;
+  min-width: 100%;
   height: auto;
   vertical-align: middle; }
 
@@ -173,13 +174,7 @@ button[type=submit]:hover {
 /* Media queries */
 @media (max-width: 768px) {
   #home-section .home-inner {
-    padding-top: 40px; }
-
-  .img-resized-custom {
-    width: 100%; }
-
-  object {
-    min-width: 100%; } }
+    padding-top: 40px; } }
 label::after {
   content: "*";
   color: #008ed6; }
@@ -188,5 +183,6 @@ label::after {
   display: none; }
 
 object {
+  min-width: 100%;
   width: 80%;
   height: 100%; }

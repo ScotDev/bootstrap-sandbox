@@ -136,6 +136,7 @@ html {
 
   .img-resized-custom {
     width: 80%;
+    min-width: 100%;
     height: auto;
     vertical-align: middle;
   }
@@ -213,12 +214,6 @@ html {
     #home-section .home-inner {
       padding-top: 40px;
     }
-    .img-resized-custom {
-      width: 100%;
-    }
-    object {
-      min-width: 100%;
-    }
   }
 
   label::after {
@@ -231,6 +226,7 @@ html {
   }
 
   object {
+    min-width: 100%;
     width: 80%;
     height: 100%;
   }
