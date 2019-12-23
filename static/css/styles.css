@@ -190,10 +190,10 @@ object {
 .titles {
   margin-bottom: 50px; }
 
-.card {
+.services-card {
   border: none;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); }
 
-.card:hover {
+.services-card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
   background-color: white; }
