@@ -1,54 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>MT Translations | Home</title>
-    <link rel="shortcut icon" type="image/x-icon" href="/static/imgs/logo-sm.png">
-    <link rel="stylesheet" href="/static/css/styles.css">
-    <link rel="stylesheet" href="/static/css/bootstrap.css">
-    <link href="https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap&subset=latin-ext" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="/static/imgs/logo-sm.png"
+    />
+    <link rel="stylesheet" href="/static/css/styles.css" />
+    <link rel="stylesheet" href="/static/css/bootstrap.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap&subset=latin-ext"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
 
-<div class="container-fluid" id="landing-bg">
-    <div class="text-center container" id="landing-area">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-142508850-2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-142508850-2");
+    </script>
+  </head>
+  <body>
+    <div class="container-fluid" id="landing-bg">
+      <div class="text-center container" id="landing-area">
         <h1 id="landing-title" class="display-2">Marcela Torres</h1>
-        <h2 class="font-weight-normal text-muted" id="landing-subtitle">Your best choice for language services.</h2>
-        <a href="./pages/services-eng.html" class="btn btn-primary btn-lg mr-4">English</a>
-        <a href="./pages/services-es.html" class="btn btn-primary btn-lg">Español</a>
+        <h2 class="font-weight-normal text-muted" id="landing-subtitle">
+          Your best choice for language services.
+        </h2>
+        <a href="./pages/services-eng.html" class="btn btn-primary btn-lg mr-4"
+          >English</a
+        >
+        <a href="./pages/services-es.html" class="btn btn-primary btn-lg"
+          >Español</a
+        >
+      </div>
     </div>
-</div>
 
-<script>
-    // Scrollspy
-    $('body').scrollspy({target: '#main-nav'});
-    
-    // Bootstrap smooth scrolling
-    $('#main-nav a').on('click', function (e) {
+    <script>
+      // Scrollspy
+      $("body").scrollspy({ target: "#main-nav" });
+
+      // Bootstrap smooth scrolling
+      $("#main-nav a").on("click", function(e) {
         // Check for a hash value
-        if (this.hash !== '') {
+        if (this.hash !== "") {
           // Prevent default behavior
           e.preventDefault();
-  
+
           // Store hash
           const hash = this.hash;
-  
+
           // Animate smooth scroll
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 900, function () {
-            // Add hash to URL after scroll
-            window.location.hash = hash;
-          });
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top
+            },
+            900,
+            function() {
+              // Add hash to URL after scroll
+              window.location.hash = hash;
+            }
+          );
         }
       });
 
       // Get current year for copyright
-      $('#year').text(new Date().getFullYear());
-</script>
-</body>
+      $("#year").text(new Date().getFullYear());
+    </script>
+  </body>
 </html>
