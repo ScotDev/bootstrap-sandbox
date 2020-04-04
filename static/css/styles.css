@@ -35,7 +35,7 @@ nav img {
     color: #e3f2fd; }
 
 #landing-bg {
-  background-image: url("/static/imgs/landing-bg.jpg");
+  background-image: url("https://cf.jare.io/?u=https://www.mttraducciones.com/static/imgs/landing-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
