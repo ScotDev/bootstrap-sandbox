@@ -89,7 +89,7 @@ nav img {
   padding-bottom: 30px;
   margin-bottom: 50px; }
 
-button[type=submit]:hover {
+button[type="submit"]:hover {
   border: 1px #008ed6 solid;
   background-color: transparent;
   color: #008ed6; }
@@ -174,7 +174,13 @@ button[type=submit]:hover {
 /* Media queries */
 @media (max-width: 768px) {
   #home-section .home-inner {
-    padding-top: 40px; } }
+    padding-top: 40px; }
+
+  object {
+    height: 160px !important; } }
+@media (max-width: 575px) {
+  object {
+    height: 100px !important; } }
 label::after {
   content: "*";
   color: #008ed6; }
@@ -185,7 +191,7 @@ label::after {
 object {
   min-width: 100%;
   width: 80%;
-  height: 100%; }
+  height: 220px; }
 
 .titles {
   margin-bottom: 50px; }
