@@ -224,10 +224,8 @@ object {
     transform: translate(0); } }
 #landing-title {
   animation-name: moveInLeft;
-  animation-duration: 1.5s;
-  animation-delay: 0.5s; }
+  animation-duration: 1.5s; }
 
 #landing-subtitle {
   animation-name: moveInRight;
-  animation-duration: 1.5s;
-  animation-delay: 0.5s; }
+  animation-duration: 1.5s; }
