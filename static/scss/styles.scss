@@ -252,3 +252,51 @@ object {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
   background-color: white;
 }
+
+// Animations
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(15px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  80% {
+    transform: translateX(-15px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+// Animated elements
+
+#landing-title {
+  animation-name: moveInLeft;
+  animation-duration: 1.5s;
+  animation-delay: 0.5s;
+}
+
+#landing-subtitle {
+  animation-name: moveInRight;
+  animation-duration: 1.5s;
+  animation-delay: 0.5s;
+}
